@@ -1,4 +1,4 @@
-html = b"""
+html = """
 <html>
     <body>
         <form method="get" action="">
