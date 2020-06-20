@@ -6,14 +6,14 @@ def application(environ, start_response):
 
     a = d.get('a', [''])[0]
     b = d.get('b', [''])[0]
-    q = 0
     if '' not in [a, b]:
         a, b = int(a), int(b)
-        for i in range(b):
-            q = q+a
-    sum = a+b
-    multiplication = q
-
+        sum = a+b
+        multiplication = a*b
+    else:
+        sum = "None"
+        multiplication = "None"
+    
 
     response_body = html % {
         'a':a,
